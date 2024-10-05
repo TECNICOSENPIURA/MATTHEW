@@ -963,6 +963,11 @@ section,
   padding: 120px 0;
   position: relative;
   clip-path: inset(0);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/foto-piura.jpeg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  justify-items: center;
 }
 
 .call-to-action img {
@@ -1811,6 +1816,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
