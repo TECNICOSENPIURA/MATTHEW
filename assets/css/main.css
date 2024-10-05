@@ -203,11 +203,11 @@ h6 {
 
 /* img header
 ------------------------------*/
-
 .header .logo1 img{
 width: 45px;
 padding: 0;
 margin-right:3px;
+margin-left:15px;
 }
 .header .logo1 h1{
   margin: 0px;
@@ -1048,7 +1048,7 @@ section,
 }
 
 .services .service-item .icon i {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(var(--default-color), transparent 10%);
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -1516,7 +1516,7 @@ section,
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
-  color: color-mix(in srgb, var(--heading-color), transparent 30%);
+  color: color-mix(in srgb, var(--heading-color));
 }
 
 .team p {
