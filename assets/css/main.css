@@ -770,9 +770,6 @@ section,
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -781,6 +778,11 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('../img/fondo-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .hero .container {

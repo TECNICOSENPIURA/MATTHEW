@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Aquí insertamos el archivo de head -->
 <div id="head-placeholder"></div>
 
 <style>
@@ -12,8 +11,12 @@
 
 <body class="index-page">
     <div id="header-placeholder"></div>
-
-
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>informacion de programacion</h1>
+    </div>
+    <div id="footer-placeholder"></div>
+    <div id="script-placeholder"></div>
     <script>
         function loadHTML(file, elementId) {
             fetch(file)
@@ -26,7 +29,11 @@
 
         loadHTML('../layout/head.html', 'head-placeholder');
         loadHTML('../layout/header.html', 'header-placeholder');
+        loadHTML('../layout/footer.html', 'footer-placeholder');
+        loadHTML('../layout/script.html', 'script-placeholder');
     </script>
+
 </body>
+
 
 </html>
