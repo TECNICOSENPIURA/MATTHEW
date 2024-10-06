@@ -78,15 +78,15 @@
       <div class="container text-center">
         <div class="row justify-content-center" data-aos="zoom-out">
           <div class="col-lg-8">
-            <h3>SERVICIOS & REPRESENTACIONES</h3>
+            <h3 >SERVICIOS & REPRESENTACIONES</h3>
             <h1>MATTHEW . SAC</h1>
-            <p>"Impulsamos la confianza en cada reparación, donde calidad y servicio hacen la diferencia. Más que un
+            <h4 >"Impulsamos la confianza en cada reparación, donde calidad y servicio hacen la diferencia. Más que un
               taller, somos una experiencia que cuida tu tranquilidad y maximiza el rendimiento de tus dispositivos."
-            </p>
-            <a href="#about" class="btn-get-started">Contactar</a>
+            </h4>
+            <a href="https://wa.me/51986550092?text=Hola" target="_blank" class="btn-get-started">Contactar</a>
           </div>
-        </div>
-      </div>
+        </div>  
+      </div>  
 
     </section><!-- /Hero Section -->
 
@@ -945,10 +945,25 @@
   </main>
   <!-- /Wssp Button -->
    <div class="Wsspbtn">
-    <a href="https://wa.me/51986550092?text=Hola" class="btn-wsp" target="_blank">
+    <a href="https://wa.me/51986550092?text=Hola"  id="whatsapp-btn" class="whatsapp-btn" target="_blank">
       <i class="fab fa-whatsapp icono"></i>
     </a>
   </div>
+  <script>
+    // Seleccionamos el botón de WhatsApp
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+
+    // Agregamos un event listener para detectar el scroll
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        // Mostrar el botón si se ha hecho scroll más de 200px
+        whatsappBtn.classList.add('show');
+      } else {
+        // Ocultar el botón si no se ha hecho scroll más de 200px
+        whatsappBtn.classList.remove('show');
+      }
+    });
+  </script>
 
    <!-- /footer -->
   <footer id="footer" class="footer dark-background">
