@@ -91,8 +91,8 @@ a:hover {
   font-weight: 300;
 }
 .col-lg-8 h4{
-  font-family: "Alata", sans-serif;
-  color: #ffffffb4;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffffd5;
   font-size: 25px;
   font-weight: bold;
   margin-top: 15px;
@@ -837,7 +837,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/fondo-hero.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/fondo5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
