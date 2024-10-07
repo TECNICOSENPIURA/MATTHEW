@@ -62,8 +62,7 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
       position: relative;
-      bottom: 0px;
-      left: 275px;
+
       opacity: 0; /* Inicialmente oculto */
       pointer-events: none; /* Deshabilita el clic cuando está oculto */
       display: none;
