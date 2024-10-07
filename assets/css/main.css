@@ -10,6 +10,9 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Black+Ops+One&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Questrial&display=swap');
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Montserrat",  sans-serif;
@@ -76,20 +79,23 @@ a:hover {
   text-decoration: none;
 }
 .col-lg-8 h1{
+  color: #93d39c;
   font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Black Ops One", system-ui;
 }
 
 .col-lg-8 h3{
-  font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #93d39c;
+  font-size: 30px;
+  font-family: "Black Ops One", system-ui;
   font-weight: 300;
 }
 .col-lg-8 h4{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+  font-family: "Alata", sans-serif;
+  color: #ffffffb4;
   font-size: 25px;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 /*
@@ -857,7 +863,7 @@ section,
 
 .hero .btn-get-started {
   color:#ffffff;
-  background-color: rgba(67, 253, 76, 0.493);
+  background-color: #66cc73;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 1px;
