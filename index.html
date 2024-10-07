@@ -44,7 +44,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
       <div class="logo1">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="#hero" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="assets/img/logo.png" alt="">
         <h1>atthew</h1>
       </a>
@@ -53,7 +53,14 @@
         <ul>
           <li><a href="#hero" class="active">Inicio</a></li>
           <li><a href="#about">Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li class="dropdown"><a href="#featured-services"><span>Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Soldadura</a></li>
+              <li><a href="#">Carpinteria</a></li>
+              <li><a href="#">Programacion</a></li>
+              <li><a href="#">Soporte Tecnico</a></li>
+            </ul>
+          </li>
           <li><a href="#portfolio">Blog</a></li>
           <li><a href="#team">Contacto</a></li>
         </ul>
@@ -78,15 +85,15 @@
       <div class="container text-center">
         <div class="row justify-content-center" data-aos="zoom-out">
           <div class="col-lg-8">
-            <h3>SERVICIOS & REPRESENTACIONES</h3>
+            <h3 >SERVICIOS & REPRESENTACIONES</h3>
             <h1>MATTHEW . SAC</h1>
-            <p>"Impulsamos la confianza en cada reparación, donde calidad y servicio hacen la diferencia. Más que un
+            <h4 >"Impulsamos la confianza en cada reparación, donde calidad y servicio hacen la diferencia. Más que un
               taller, somos una experiencia que cuida tu tranquilidad y maximiza el rendimiento de tus dispositivos."
-            </p>
-            <a href="#about" class="btn-get-started">Contactar</a>
+            </h4>
+            <a href="https://wa.me/51986550092?text=Hola" target="_blank" class="btn-get-started">Contactar</a>
           </div>
-        </div>
-      </div>
+        </div>  
+      </div>  
 
     </section><!-- /Hero Section -->
 
@@ -195,7 +202,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
-              <img src="assets/img/cards-1.jpg" alt="" class="img-fluid">
+              <img src="assets/img/services/soldadura.jpg" alt="" class="img-fluid">
               <div class="card-body">
                 <h3><a href="/services/welding.html" class="stretched-link">SOLDADURA</a></h3>
                 <div class="card-content">
@@ -203,14 +210,16 @@
                     estructuras metálicas. Nuestro equipo altamente capacitado garantiza trabajos resistentes y de alta
                     calidad, cuidando hasta el último detalle para ofrecerte soluciones duraderas y seguras en cada
                     proyecto.</p>
+                    
                 </div>
+                <button class="btn-ver-mas">Ver más</button>
               </div>
             </div>
           </div><!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card">
-              <img src="assets/img/cards-2.jpg" alt="" class="img-fluid">
+              <img src="assets/img/services/serviciotecnico.jpg" alt="" class="img-fluid">
               <div class="card-body">
                 <h3><a href="/services/technicalservice.html" class="stretched-link">SERVICIO TECNICO</a></h3>
                 <div class="card-content">
@@ -218,13 +227,14 @@
                     electrónicos y electrodomésticos. Nuestro compromiso es brindarte soluciones rápidas y efectivas,
                     asegurando el funcionamiento óptimo de tus dispositivos.</p>
                 </div>
+                <button class="btn-ver-mas">Ver más</button>
               </div>
             </div>
           </div><!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
-              <img src="assets/img/cards-3.jpg" alt="" class="img-fluid">
+              <img src="assets/img/services/carpinteria.jpg" alt="" class="img-fluid">
               <div class="card-body">
                 <h3><a href="/services/carpentry.html" class="stretched-link">CARPINTERIA</a></h3>
                 <div class="card-content">
@@ -232,13 +242,14 @@
                     estructuras personalizadas para tu hogar o negocio. Nos especializamos en la fabricación de puertas,
                     ventanas, armarios y más, siempre priorizando la durabilidad y el diseño estético.</p>
                 </div>
+                <button class="btn-ver-mas">Ver más</button>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
-              <img src="assets/img/cards-3.jpg" alt="" class="img-fluid">
+              <img src="assets/img/services/mantenimiento.jpg" alt="" class="img-fluid">
               <div class="card-body">
                 <h3><a href="/services/maintenance.html" class="stretched-link">MANTENIMIENTO DE EQUIPOS ELECTRICOS</a></h3>
                 <div class="card-content">
@@ -246,12 +257,13 @@
                     rendimiento y prolongando su vida útil. Contamos con técnicos capacitados para atender cualquier
                     tipo de instalación eléctrica, tanto en el hogar como en empresas.</p>
                 </div>
+                <button class="btn-ver-mas">Ver más</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
-              <img src="assets/img/programacion.jpg" alt="" class="img-fluid">
+              <img src="assets/img/services/programacion.jpg" alt="" class="img-fluid">
               <div class="card-body">
                 <h3><a href="/services/programming.html" class="stretched-link">PROGRAMACION</a></h3>
                 <div class="card-content">
@@ -259,13 +271,14 @@
                     soluciones tecnológicas avanzadas para automatizar procesos. Nuestro equipo de programadores está
                     preparado para atender proyectos de diversas industrias con la máxima eficiencia.</p>
                 </div>
+                <button class="btn-ver-mas">Ver más</button>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
-              <img src="assets/img/cards-3.jpg" alt="" class="img-fluid">
+              <img src="assets/img/services/muebles.jpg" alt="" class="img-fluid">
               <div class="card-body">
                 <h3><a href="/services/manufacturing.html" class="stretched-link">FABRICACION DE MUEBLES</a></h3>
                 <div class="card-content">
@@ -273,6 +286,7 @@
                     estructuras personalizadas para tu hogar o negocio. Nos especializamos en la fabricación de puertas,
                     ventanas, armarios y más, siempre priorizando la durabilidad y el diseño estético.</p>
                 </div>
+                <button class="btn-ver-mas">Ver más</button>
               </div>
             </div>
           </div>
@@ -302,102 +316,13 @@
 
       </div>
 
-    </section><!-- /Call To Action Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                  occaecati cupiditate non provident</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat tarad limino ata</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                  soluta nobis est eligendi</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Portfolio Section -->
+    </section>
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -408,7 +333,7 @@
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -422,7 +347,7 @@
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
@@ -888,6 +813,24 @@
               <div class="swiper-slide">
                 <div class="team">
                   <div class="pic">
+                    <img src="assets/img/team/team-1.jpg" alt="Image" class="img-fluid">
+                  </div>
+                  <h3 clas="">
+                    <a href="#"><span class="">Olver </span> Mateo Maza</a>
+                  </h3>
+                  <span class="d-block position">CEO, Founder, Atty.</span>
+                  <p>
+                    Separated they live in. Separated they live in Bookmarksgrove
+                    right at the coast of the Semantics, a large language ocean.
+                  </p>
+                  <p class="mb-0">
+                    <a href="#" class="more dark">Learn More <span class="bi bi-arrow-right-short"></span></a>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="team">
+                  <div class="pic">
                     <img src="assets/img/team/team-2.jpg" alt="Image" class="img-fluid">
                   </div>
                   <h3 clas="">
@@ -939,10 +882,9 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
           <iframe style="border:0; width: 100%; height: 270px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d417.66359138358297!2d-80.68675967896183!3d-5.182494201951544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1728161446148!5m2!1ses-419!2spe"
             frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
@@ -1017,10 +959,25 @@
   </main>
   <!-- /Wssp Button -->
    <div class="Wsspbtn">
-    <a href="https://wa.me/51986550092?text=Hola" class="btn-wsp" target="_blank">
+    <a href="https://wa.me/51986550092?text=Hola"  id="whatsapp-btn" class="whatsapp-btn" target="_blank">
       <i class="fab fa-whatsapp icono"></i>
     </a>
   </div>
+  <script>
+    // Seleccionamos el botón de WhatsApp
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+
+    // Agregamos un event listener para detectar el scroll
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        // Mostrar el botón si se ha hecho scroll más de 200px
+        whatsappBtn.classList.add('show');
+      } else {
+        // Ocultar el botón si no se ha hecho scroll más de 200px
+        whatsappBtn.classList.remove('show');
+      }
+    });
+  </script>
 
    <!-- /footer -->
   <footer id="footer" class="footer dark-background">
@@ -1092,26 +1049,18 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Knight</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">MR. MATTHEW</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">TECNICOSENPIURA</a>
       </div>
     </div>
 
   </footer>
-
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
