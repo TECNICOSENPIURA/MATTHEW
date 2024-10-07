@@ -17,6 +17,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
   }
   #whatsapp-btn.show {
     opacity: 1;
@@ -49,3 +50,37 @@
             color: rgba(255, 255, 255, 0.788);
           }
     }
+
+    /* ver mas btn de descripcion*/
+    .btn-ver-mas {
+      background-color: #4ddc408e;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: relative;
+      bottom: 0px;
+      left: 275px;
+      opacity: 0; /* Inicialmente oculto */
+      pointer-events: none; /* Deshabilita el clic cuando está oculto */
+      display: none;
+      transition: opacity 0.3s ease;
+  }
+  
+  .btn-ver-mas:hover {
+      background-color: #34B2B9;
+  }
+  
+  .btn-ver-mas:active {
+      background-color: #2C9093;
+
+  }
+
+  .card:hover .btn-ver-mas {
+    display: initial;
+    opacity: 1; /* Se muestra al hacer hover */
+    pointer-events: auto; /* Habilita el clic al hacer hover */
+}

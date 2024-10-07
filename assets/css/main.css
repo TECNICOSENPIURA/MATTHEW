@@ -922,6 +922,9 @@ section,
 .clients .swiper {
   padding: 10px 0;
 }
+.clients .swiper:hover{
+  cursor: pointer;
+}
 
 .clients .swiper-wrapper {
   height: auto;
@@ -998,7 +1001,7 @@ section,
 .featured-services .card .card-body .card-content p {
   font-size: 15px;
   padding-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 13px;
   overflow: hidden;
   color: var(--contrast-color);
 }
