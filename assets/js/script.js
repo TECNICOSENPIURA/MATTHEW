@@ -1,5 +1,5 @@
 let currentIndex = [0, 0, 0, 0];
-const intervalTime = 9000; // 5 segundos
+const intervalTime = 9000; // 9 segundos
 
 function showSlide(carouselIndex, slideIndex) {
     const carousel = document.getElementById(`carousel${carouselIndex}`);
