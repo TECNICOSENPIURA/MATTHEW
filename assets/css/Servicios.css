@@ -1,90 +1,139 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+@keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #555555;
+    transform: scale(1.05);
+  }
+  .text-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+    animation: fadeSlideIn 1.5s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #666;
+    animation: fadeIn 2s ease-in-out;
+  }
+    
 
 .carousel-container {
-    position: relative;
-    width: 100%;
-    margin-bottom: 0px;
+  position: relative;
+  width: 80%;
+margin-left: 20%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .carousel {
-    overflow: hidden;
-    position: relative;
-    height: 300px;
-    width: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
 }
 
-.carousel-slide {
-    position: relative;
-    min-width: 100%;
-    box-sizing: border-box;
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-.carousel-slide img {
-    width: 100%;
-    height: auto;
-    justify-content: space-between;    
-    display: block;
+.arrow.left {
+  left: 10px;
 }
 
-.overlay {
-    position: absolute;
-    top:182px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 30px;
-    text-align: left;
-    box-sizing: border-box;
-}
-.overlay:hover {
-    background-color: rgba(0, 0, 0, 0.856);
-    cursor:pointer;
+.arrow.right {
+  right: 10px;
 }
 
-
-.overlay h2 {
-    margin: 0;
-    font-size: 24px;
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.overlay p {
-    margin: 5px 0 0;
-    font-size: 16px;
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
 }
 
-button.prev, button.next {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-button.prev {
-    left: 10px;
+.dot.active {
+  background-color: #333;
+  transform: scale(1.2);
 }
+@media (max-width: 575px) {
+    .carousel-container {
+         
+        text-align: center;
+      }
+   
+      h1 {
 
-button.next {
-    right: 10px;
-}
-
-button.prev:hover, button.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+        font-size: 24px ;
+      }
+  }

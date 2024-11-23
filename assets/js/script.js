@@ -1,35 +1,40 @@
-let currentIndex = [0, 0, 0, 0];
-const intervalTime = 9000; // 9 segundos
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel img');
+const dotsContainer = document.querySelector('.dots');
+let currentIndex = 0;
 
-function showSlide(carouselIndex, slideIndex) {
-    const carousel = document.getElementById(`carousel${carouselIndex}`);
-    const slides = carousel.querySelectorAll(".carousel-images .carousel-slide");
-    if (slideIndex >= slides.length) {
-        currentIndex[carouselIndex - 1] = 0;
-    }
-    if (slideIndex < 0) {
-        currentIndex[carouselIndex - 1] = slides.length - 1;
-    }
-    const offset = -currentIndex[carouselIndex - 1] * 100;
-    carousel.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
+// Create dots dynamically
+slides.forEach((_, index) => {
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  if (index === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goToSlide(index));
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.dot');
+
+function updateDots() {
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[currentIndex].classList.add('active');
 }
 
-function nextSlide(carouselIndex) {
-    currentIndex[carouselIndex - 1]++;
-    showSlide(carouselIndex, currentIndex[carouselIndex - 1]);
+function goToSlide(index) {
+  currentIndex = index;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+  updateDots();
 }
 
-function prevSlide(carouselIndex) {
-    currentIndex[carouselIndex - 1]--;
-    showSlide(carouselIndex, currentIndex[carouselIndex - 1]);
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  goToSlide(currentIndex);
 }
 
-// Mover los carruseles automáticamente
-function autoMoveCarousels() {
-    for (let i = 1; i <= 4; i++) {
-        nextSlide(i);
-    }
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  goToSlide(currentIndex);
 }
 
-// Configurar el intervalo para que se muevan cada 5 segundos
-setInterval(autoMoveCarousels, intervalTime);
+
+
+  
