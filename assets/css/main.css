@@ -979,7 +979,7 @@ section,
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 13;
   z-index: 3;
   padding: 30px;
 }
