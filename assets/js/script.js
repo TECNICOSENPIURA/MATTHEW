@@ -10,7 +10,26 @@ slides.forEach((_, index) => {
   if (index === 0) dot.classList.add('active');
   dot.addEventListener('click', () => goToSlide(index));
   dotsContainer.appendChild(dot);
-});
+});// Función para mostrar/ocultar el contenido de la tarjeta
+function toggleContent(cardElement) {
+  const content = cardElement.querySelector('.card-content');
+  
+  // Alterna la visibilidad y animación de la tarjeta
+  if (content.style.display === 'none' || content.style.display === '') {
+    content.style.display = 'block';
+    setTimeout(() => {
+      content.style.opacity = '1';
+      content.style.transform = 'translateY(0)';
+    }, 10);
+  } else {
+    content.style.opacity = '0';
+    content.style.transform = 'translateY(100%)';
+    setTimeout(() => {
+      content.style.display = 'none';
+    }, 300);
+  }
+}
+
 
 const dots = document.querySelectorAll('.dot');
 

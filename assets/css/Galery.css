@@ -7,12 +7,17 @@
       opacity: 1;
       transform: translateY(0);
     }
+
   }
+
+.negro{
+  background-color: #020202;
+}
   .button {
     padding: 10px 30px;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #020202;
     background: #333333;
     border: none;
     border-radius: 5px;
@@ -132,16 +137,22 @@ margin-left: 20%;
         text-align: center;
       }
    
+
       h1 {
 
         font-size: 24px ;
       }
   }
-  .negro{
-    background-color: #222;
-  }
 
-  
+.card-container {
+  margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    width: 100%;
+    margin-left: 3.5%;
+    max-width: 1200px; /* Ancho máximo */
+  }
   
   .card {
     background: #fff;
@@ -168,7 +179,6 @@ margin-left: 20%;
   }
   
   .card-content {
-    padding: 20px;
     display: none; /* Inicialmente oculto */
     position: absolute;
     bottom: 0;
@@ -214,11 +224,20 @@ margin-left: 20%;
     .card-container {
       grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     }
+    .card-container{
+      width: 95%;
+      justify-content: center;
+    }
   }
   
   /* Responsividad: tarjetas en 1 columna en pantallas muy pequeñas */
-  @media (max-width: 600px) {
+  @media (max-width: 1100px) {
     .card-container {
+      width: 95%;
       grid-template-columns: 1fr; /* Una columna */
     }
-  }
+    @media (max-width: 490px) {
+      .card-container {
+        width: 95%;
+      }
+  };
